@@ -56,24 +56,40 @@ console.log(`Meu nome é ${nomeDoUsuario}, tenho ${suaIdade} anos, e o meu email
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
+  const corFavorita1 = prompt("digit sua primeira cor favorita")
+  const corFavorita2 = prompt("digite sua segunda cor favorita")
+  const corFavorita3 = prompt("digite sua terceira cor favorita")
+  const coresfavoritas = ([corFavorita1, corFavorita2, corFavorita3])
+  console.log(coresfavoritas)
 
 }
+
+
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-
+ 
+ return string.toUpperCase()
+ 
+ 
 }
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
 
+
+return custo / valorIngresso
+
+
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
+  
+  return string1.length === string2.length
 
 }
 
@@ -81,24 +97,32 @@ function checaStringsMesmoTamanho(string1, string2) {
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
 
+  return array[0] 
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
 
+  return array[array.length-1]
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
+  const ultimoNumero = array[array.length -1]
+  const primeiroNumero = array[0]
 
+  array[array.length -1] = primeiroNumero
+  array[0] = ultimoNumero
+  return array
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
 
+  return string1.toUpperCase() === string2.toUpperCase()
 }
 
 // EXERCÍCIO 13
