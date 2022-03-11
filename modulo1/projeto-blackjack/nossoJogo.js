@@ -16,7 +16,7 @@
 
     
     
-    if(confirm("pergunta de sim ou não")) {
+    if(confirm("quer iniciar uma nova rodada?")) {
       // o que fazer se o usuário clicar "ok"
       console.log("Bem-Vindo(a) ao jogo de Blackjack")
    } else {
@@ -29,20 +29,20 @@
 
       const carta1Usuario = comprarCarta()
       const carta2Usuario = comprarCarta()
-      const carta1Pc = comprarCarta()
-      const carta2Pc = comprarCarta()
+      const cartaPc1 = comprarCarta()
+      const cartaPc2 = comprarCarta()
   
       const pontuacaoUsuario = carta1Usuario.valor + carta2Usuario.valor
-      console.log(`Usuário - cartas: ${carta1Usuario.texto} ${carta2Usuario.texto} - pontuação ${pontuacaoUsuario}`)
+      console.log(`Usuario - cartas: ${carta1Usuario.texto} ${carta2Usuario.texto} - pontuação ${pontuacaoUsuario}`)
 
-      const pontuacaoPc = carta1Pc.valor + carta2Pc.valor
-      console.log(`Computador - cartas: ${carta1Pc.texto} ${carta2Pc.texto} - pontuação ${pontuacaoPc}`)
+      const pontuacaoPc = cartaPc1.valor + cartaPc2.valor
+      console.log(`Computador - cartas: ${cartaPc1.texto} ${cartaPc2.texto} - pontuação ${pontuacaoPc}`)
   
       if (pontuacaoUsuario === pontuacaoPc) {
          console.log("Empate!")
          
       } else if (pontuacaoUsuario > pontuacaoPc) {
-         console.log("O usuário ganhou!")
+         console.log("O usuario ganhou!")
 
       } else if (pontuacaoPc > pontuacaoUsuario) {
          console.log("O computador ganhou!")
