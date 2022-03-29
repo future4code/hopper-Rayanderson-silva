@@ -55,7 +55,7 @@ div img {
 }
 
 .container {
-    
+    padding: 300px 0px 0px  0px;
     height: 500px;
     text-align: center;
 }
@@ -72,12 +72,16 @@ div img {
   **/
 
 #container-de-descricao {
+  
+    
     background-color: #2274a5;
     color: white;
 }
 
 #container-de-descricao>ol {
-    padding: 15px 0px;
+    padding: 10px 0px 10px 0px;
+    
+    
 }
 
 #container-para-comprar {
